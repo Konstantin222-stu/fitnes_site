@@ -1,6 +1,6 @@
 .header::before{
     content: "";
-    background-image: url("/images/hero.png");
+    background-image: url("images/hero.png");
     background-repeat: no-repeat;
     width: 758px;
     height: 1007px;
