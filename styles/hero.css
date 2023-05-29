@@ -1,0 +1,143 @@
+.hero__content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 390px;
+}
+.hero__text{
+    width: 400px;
+    margin-top: 212px;
+    
+}
+
+.hero__text>p{
+    text-align: left;
+}
+
+.hero__text>.desc{
+    margin-bottom: 61px;
+}
+
+.hero__title{
+    
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    color: #3A1212;
+    margin-bottom: 23px;
+}
+.hero__img{
+    position: relative;
+
+}
+
+.hero__img>img{
+    position: absolute;
+    top: -13%;
+    right: -71px;
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 58px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #000;
+    border: 0.75px solid #FF2625;
+    text-decoration: none;
+    text-align: center;
+    padding: 1px;
+}
+
+.active{
+    background: #FF2625;
+    color: #fff;
+}
+
+.btns{
+    display: flex;
+}
+
+.btns>.btn:not(:last-child){
+    margin-right: 29px;
+}
+
+.hero__img_mob{
+    display: none;
+}
+
+
+
+@media (max-width:1253px) {
+    .hero__img>img{
+        position: absolute;
+        top: -13%;
+        right: -50px;
+        width: 520px;
+        z-index: -1;
+    }
+    
+}
+
+@media (max-width:946px) {
+    .header::before{
+        display: none;
+    }
+
+    .hero__img>img{
+        display: none;
+    }
+
+    .hero__img_mob{
+        display: block;
+        
+    }
+    .hero__img_mob>img{
+        width: 350px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    
+}
+
+@media (max-width:790px) {
+    
+    .hero__content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero__text{
+        margin: 0 auto;
+        
+    }
+    
+}
+
+@media (max-width:470px) {
+    
+    .hero__img_mob{
+        display: none;
+        
+    }
+    
+    .btn{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:425px) {
+    
+    .hero__text{
+        width: 300px;
+        margin-top: 212px;
+        
+    }
+}

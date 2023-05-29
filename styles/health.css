@@ -1,0 +1,134 @@
+.health{
+    background-image: url('/images/12.svg');
+    background-repeat: repeat-x;
+}
+
+.health__content{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 190px 0 0px 0;
+}
+
+.health__img>img{
+    border-radius: 2px 2px 100px 2px;
+}
+
+.health__img{
+    position: relative;
+    margin-right: 102px;
+}
+
+.health__text{
+    text-align-last: left;
+    width: 502px;
+}
+
+.health__title{
+    margin-bottom: 22px;
+}
+
+.health__desc{
+    text-align: left;
+    margin-bottom: 42px;
+}
+
+
+.health__text>button{
+    width: 170px;
+    height: 58px;
+    background: #FF2625;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 160%;
+    display: flex;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.health__img__mob{
+    display: none;
+}
+
+@media (max-width:1220px) {
+
+    .health__img>img{
+    width: 450px;
+    height: 500px;
+    }
+
+    .health__title{
+        font-size: 30px;
+
+    }
+
+    .health__desc{
+        font-size: 16px;
+    }
+    .health__text{
+        text-align-last: left;
+        width: 300px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .health__img>img{
+    width: 350px;
+    height: 400px;
+    }
+    .health__img::before {
+        display: none;
+    }
+
+    .health__img{
+        margin-right: 50px;
+    }
+
+    .health__text>button{
+        width: 130px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:724px) {
+
+    .health__img{
+        display: none;
+        }
+
+    .health__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .health__img__mob{
+        display: block;
+        }
+    .health__img__mob>img{
+        width: 350px;
+        height: 400px;
+        border-radius: 2px 2px 100px 2px;
+        }
+
+    .health__text{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:413px) {
+    .health__img__mob{
+        display: none;
+        }
+
+}

@@ -1,0 +1,124 @@
+.improve{
+    background-image: url("/images/11.svg");
+    background-repeat: repeat-x;
+}
+
+.improve__content{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 190px 0 190px 0;
+}
+
+.improve__text{
+    text-align: left;
+    width: 502px;
+    margin-right: 110px;
+}
+.improve__text>button{
+    width: 170px;
+    height: 58px;
+    background: #FF2625;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.improve__title{
+    margin-bottom: 22px;
+}
+.improve__desc{
+    margin-bottom: 42px;
+    text-align: left;
+}
+
+.subtitle{}
+
+.improve__img{
+    position: relative;
+}
+
+.improve__img > img{
+    border-radius: 2px 100px 2px 2px;
+}
+
+
+@media (max-width:1220px) {
+
+    .improve__img>img{
+    width: 450px;
+    height: 500px;
+    }
+
+    .improve__title{
+        font-size: 30px;
+
+    }
+
+    .improve__desc{
+        font-size: 16px;
+    }
+    .improve__text{
+        text-align-last: left;
+        width: 300px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .improve__img>img{
+    width: 350px;
+    height: 400px;
+    }
+    .improve__img::before {
+        display: none;
+    }
+
+    .improve__img{
+        margin-right: 50px;
+    }
+
+    .improve__text>button{
+        width: 130px;
+        height: 36px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:850px) {
+    .improve__img>img{
+        width: 300px;
+        height: 350px;
+        }
+    
+}
+
+@media (max-width:718px) {
+    
+    .improve__content{
+       display: grid;
+       gap: 20px;
+       
+    }
+
+    .improve__img{
+        margin-right: 0;
+    }
+    .improve__text{
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width:413px) {
+    
+
+}

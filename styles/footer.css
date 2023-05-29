@@ -1,0 +1,125 @@
+.footer{
+    background-color: #FFF3F4;
+}
+
+.footer__content{
+    box-sizing: border-box;
+    padding: 67px 0 55px 0;
+}
+
+.footer__section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+}
+
+.footer__info{}
+
+.footer__logo{
+    margin-bottom: 33px;
+}
+
+.footer__text{
+    width: 332px;
+    margin-bottom: 26px;
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #504747;
+}
+
+.footer__social{
+    display: flex;
+}
+
+.footer__social > a:not(:last-child){
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+
+.footer__nav{}
+
+.footer__title{
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3A1212;
+    margin-bottom: 39px;
+}
+
+.footer__nav > ul{
+    list-style: none;
+}
+
+.footer__nav > ul>li:not(:last-child){
+    margin-bottom: 18px;
+}
+
+.footer__nav > ul>li>a{
+    text-decoration: none;
+    font-family: 'Alegreya';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    color: #504747;
+}
+
+.copyright{
+    text-align: center;
+    color: #A69B9B;
+}
+
+@media (max-width:888px){
+    
+    .footer__nav > ul>li>a{
+        font-size: 18px;
+    }
+
+    .footer__text{
+        width: 200px;
+        font-size: 18px;
+        margin-bottom: 26px;
+        color: #504747;
+    }
+
+    .footer__nav > ul>li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:670px) {
+    .footer__section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .footer__info,.footer__nav{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .footer__section{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .footer__nav{
+        text-align: center;
+    }
+    .footer__title{
+        margin-bottom: 25px;
+    }
+    .footer__info,.footer__nav{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  <script src="slider.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <header class="header">
+                <div class="header__content wrap">
+                    <nav class="nav">
+                        <div class="logo"><img src="/images/Logo_header.svg" alt="логотип"></div>
+                        <ul class="nav__list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="training.html">Тренера</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="menu-btn">
+                            <span></span>
+                        </a>
+                        
+                        <script>
+                            $('.menu-btn').on('click', function(e) {
+                                e.preventDefault;
+                                $(this).toggleClass('menu-btn_active');
+                                $('.nav__list_mob').toggleClass('nav__list_mob_active')
+                            });
+                        </script>
+                        <ul class="nav__list_mob">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="training.html">Тренера</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                        
+                    </nav>
+                    
+                </div>
+        </header>
+        <div class="hero__content wrap">
+            <div class="hero__text">
+                <h3 class="subtitle">__Fitness Club <span><img src="" alt=""></span></h3>
+                <h1 class="hero__title">
+                    Пот, улыбка
+                    И повторить
+                </h1>
+                <p class="desc">
+                    Здесь вы можете заполнить форму для записи на пробное занятие
+                </p>
+                
+            </div>
+            <div class="hero__img"><img src="/images/hero.png" alt="девушка"></div>
+            <div class="hero__img_mob"><img src="/images/hero_mob.jpg" alt="девушка"></div>
+        </div>
+        
+    </div>
+    <div class="form" id="form">
+        <div class="form__content wrap">
+            <form method="post" action="mail.php">
+                <img class="form__icon" src="" alt="">
+                <h2 class="form__title title">Запишитесь на пробное занятие</h2>
+                <p class="form__desc desc">
+                У нас себя найдут как новички, так и профессиональные спортсмены. 
+                    Наша главная ценность – это высокий уровень сервиса! 
+                    Мы стремимся сделать фитнес-услуги максимально качественными и доступными 
+                    и обеспечить максимум результатов при минимуме затраченного времени.
+                </p>
+                <div class="form__inputs">
+                    <input type="email" placeholder="Ваша почта" name="to"><input type="submit" value="Subscribe"></input>
+                    
+                </div>
+            </form>
+           
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content wrap">
+            <div class="footer__section">
+                <div class="footer__info">
+                    <div class="footer__logo"><img src="images/Logo.svg" alt="логотип"></div>
+                    <div class="footer__text">
+                        Фитнес-клуб для женщин, который
+                        обеспечить качественными услугами фитнеса и питание
+                        сопутствующий услуги для улучшения
+                        Ваше здоровье
+                    </div>
+                    <div class="footer__social">
+                        <a href="#"><img src="images/0.svg" alt="icon1"></a>
+                        <a href="#"><img src="images/1.svg" alt="icon2"></a>
+                        <a href="#"><img src="images/2.svg" alt="icon3"></a>
+                        <a href="#"><img src="images/3.svg" alt="icon4"></a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Ресурсы</h3>
+                    <ul>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="training.html">Тренера</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">О нас</h3>
+                    <ul>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="services.html">Услуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">Все права защищены</div>
+        </div>
+
+    </footer>
+</body>
+</html>

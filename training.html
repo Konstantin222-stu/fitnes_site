@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  <script src="slider.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <header class="header">
+                <div class="header__content wrap">
+                    <nav class="nav">
+                        <div class="logo"><img src="/images/Logo_header.svg" alt="логотип"></div>
+                        <ul class="nav__list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="training.html">Тренера</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="menu-btn">
+                            <span></span>
+                        </a>
+                        
+                        <script>
+                            $('.menu-btn').on('click', function(e) {
+                                e.preventDefault;
+                                $(this).toggleClass('menu-btn_active');
+                                $('.nav__list_mob').toggleClass('nav__list_mob_active')
+                            });
+                        </script>
+                        <ul class="nav__list_mob">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="training.html">Тренера</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                        
+                    </nav>
+                    
+                </div>
+        </header>
+        <div class="hero__content wrap">
+            <div class="hero__text">
+                <h3 class="subtitle">__Fitness Club <span><img src="" alt=""></span></h3>
+                <h1 class="hero__title">
+                    Пот, улыбка
+                    И повторить
+                </h1>
+                <p class="desc">
+                    Здесь вы можете познакомиться с нашими тренерами и целей, которая наша компания придерживается 
+                </p>
+                
+            </div>
+            <div class="hero__img"><img src="/images/hero.png" alt="девушка"></div>
+            <div class="hero__img_mob"><img src="/images/hero_mob.jpg" alt="девушка"></div>
+        </div>
+        
+    </div>
+    <div class="improve">
+        <div class="improve__content wrap">
+            <div class="improve__text">
+                <h3 class="subtitle">Улучшение настроения</h3>
+                <h2 class="title improve__title">
+                    Делает вас более активным
+                    И улучшаем настроение
+                </h2>
+                <p class="desc improve__desc">
+                    Физическая активность и упражнения могут иметь
+                    немедленную и долгосрочную пользу для вашего здоровья.
+                    Самое главное, регулярная активность может улучшить
+                    ваше качество жизни. Упражнения могут улучшить ваше
+                    здоровья и снизить риск заболеваний
+                </p>
+            </div>
+            <div class="improve__img"><img src="images/improve.jpg" alt="девушка с гантелями"></div>
+        </div>
+    </div>
+    <div class="instructors">
+        <div class="instructors__content wrap">
+            <h3 class="subtitle subtitle_center">Наши тренера</h3>
+            <h2 class="title title_center instructors_title">
+                Познакомьтесь с нашими опытными 
+                И талантливыми тренерами
+            </h2>
+            <div class="instructors__cards">
+                <div class="card">
+                    <img src="/images/treners1.png" alt="тренер">
+                    <img class="m_p" src="/images/tre2.png" alt="тренер">
+                    <h4 class="card__title">Сергей Ников</h4>
+                    <h5 class="card__subtitle">Каридо эксперт</h5>
+                </div>
+                <div class="card">
+                    <img src="/images/treners2.png" alt="тренер">
+                    <img  class="m_p" src="/images/treners2.png" alt="тренер">
+                    <h4 class="card__title">Наталья Белун</h4>
+                    <h5 class="card__subtitle">Эксперт по питанию</h5>
+                </div>
+                <div class="card">
+                    <img src="/images/treners3.png" alt="тренер">
+                    <img  class="m_p" src="/images/tre1.png" alt="тренер">
+                    <h4 class="card__title">Дмитрий Фирсов</h4>
+                    <h5 class="card__subtitle">Эксперт по медитациям</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial__content wrap">
+            <div class="testimonial__img"><img src="/images/testimonial.jpg" alt="мама с ребеноком">
+                <div class="testimonial__text">
+                    <p class="desc testimonial__desc">
+                        “
+                        Всем молодым мамам, которые заботятся о своем здоровье и теле, не стоит забывать о правильном питании и занятиях фитнесом с малышом.
+                        Ребенок - замечательное дополнение к твоим тренировкам. Вместе весело, а, главное, полезно и безопасно.
+                        Тереровки с ребенком это весело
+                        ”
+                    </p>
+                    <div class="bottom__text">
+                        <div class="signature">
+                            <p>Ольга Чурикова</p>
+                            <span>Краснодарский край</span>
+                        </div>
+                        <div class="arrows">
+                            <img class="active" src="" alt="">
+                            <img class="no_active" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial__info">
+                <h4 class="subtitle">Testimonial</h4>
+                <h2 class="title testimonial__title">
+                    Мы вместе с детьми
+                </h2>
+                <div class="testimonial__text_lt">
+                    <p class="desc testimonial__desc">
+                        “
+                        Всем молодым мамам, которые заботятся о своем здоровье и теле, не стоит забывать о правильном питании и занятиях фитнесом с малышом.
+                        Ребенок - замечательное дополнение к твоим тренировкам. Вместе весело, а, главное, полезно и безопасно.
+                        Тереровки с ребенком это весело
+                        ”
+                    </p>
+                    <div class="bottom__text">
+                        <div class="signature">
+                            <p>Ольга Чурикова</p>
+                            <span>Краснодарский край</span>
+                        </div>
+                        <div class="arrows">
+                            <img class="active" src="" alt="">
+                            <img class="no_active" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="form" id="form">
+        <div class="form__content wrap">
+            <form method="post" action="mail.php">
+                <img class="form__icon" src="" alt="">
+                <h2 class="form__title title">Запишитесь на пробное занятие</h2>
+                <p class="form__desc desc">
+                У нас себя найдут как новички, так и профессиональные спортсмены. 
+                    Наша главная ценность – это высокий уровень сервиса! 
+                    Мы стремимся сделать фитнес-услуги максимально качественными и доступными 
+                    и обеспечить максимум результатов при минимуме затраченного времени.
+                </p>
+                <div class="form__inputs">
+                    <input type="email" placeholder="Ваша почта" name="to"><input type="submit" value="Subscribe"></input>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content wrap">
+            <div class="footer__section">
+                <div class="footer__info">
+                    <div class="footer__logo"><img src="images/Logo.svg" alt="логотип"></div>
+                    <div class="footer__text">
+                        Фитнес-клуб для женщин, который
+                        обеспечить качественными услугами фитнеса и питание
+                        сопутствующий услуги для улучшения
+                        Ваше здоровье
+                    </div>
+                    <div class="footer__social">
+                        <a href="#"><img src="images/0.svg" alt="icon1"></a>
+                        <a href="#"><img src="images/1.svg" alt="icon2"></a>
+                        <a href="#"><img src="images/2.svg" alt="icon3"></a>
+                        <a href="#"><img src="images/3.svg" alt="icon4"></a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Ресурсы</h3>
+                    <ul>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="training.html">Тренера</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">О нас</h3>
+                    <ul>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">Все права защищены</div>
+        </div>
+
+    </footer>
+</body>
+</html>
