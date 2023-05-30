@@ -48,7 +48,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     color: #3A1212;
     margin-bottom: 39px;
 }
@@ -118,6 +118,7 @@
     }
     .footer__title{
         margin-bottom: 25px;
+        text-align: center;
     }
     .footer__info,.footer__nav{
         margin-bottom: 30px;
