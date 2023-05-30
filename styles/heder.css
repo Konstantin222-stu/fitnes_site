@@ -107,7 +107,7 @@
         display: block;
         
         transform-origin: center;
-        transform: translateX(30%);
+        transform: translateX(10%);
         transition: 0.5s;
         opacity: 0;
     }
